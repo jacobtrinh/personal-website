@@ -146,7 +146,7 @@ p {
 @media (min-width: 319px) and (max-width: 480px) {
     .card {
         flex-direction: column-reverse;
-        height: auto;
+        height: 700px;
         padding: 15px;
         text-align: center;
     }
