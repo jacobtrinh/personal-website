@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #002347;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+.socials-bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+    gap: 10px;
+}
+
+.linked-in {
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.card > img {
+    border-radius: 50%;
+    height: 500px;
+    position: relative;
+    animation-name: pfp;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+
+@keyframes pfp {
+    0% {transform: translateY(-750px); opacity: 0;}
+    100% {transform: translateY(0px); opacity:1;}
+}
+
+.text {
+    text-align: center;
+}
+
+.first-group > p {
+    font-size: 3.3rem;
+    margin-bottom: 0;
+}
+
+.click-me {
+    margin-top: 50px;
+    height: 90px;
+    width: 200px;
+    border-radius: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ff8e00;
+    background-color: #f2f2f2;
+    border-color: #ff8e00;
+    border-style: solid;
+    font-family: "Poppins";
+    padding: 5px;
+    transition-property: transform;
+    transition-duration: 1s;
+    animation-name: btn;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes btn {
+    0% {opacity :0}
+    100% {opacity: 1}
+}
+
+.click-me:hover {
+    border: none;
+    background-color: #ff8e00;
+    color: #f2f2f2;
+    transform: rotateY(180deg);
+}
+
+.hi {
+    color: #ff8e00;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #ff8e00;
+}
+
+.developer {
+    font-weight: bold;
+    color: #ff8e00;
+}
+
+.button-text {
+    color: #ff8e00
+}
+
+.button-description {
+    font-size: 20px;
+    opacity: 0;
+    animation-name: button-description;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+@keyframes button-description {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/* Responsiveness */
+
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card > img {
+        height: 300px;
+        margin-bottom: 20px;
+
+    }
+
+    .text {
+        margin: 0 auto;
+    }
+}
+
+/* Text Animation */
+
+.h, .i, .I, .apostrophe, .m, .J, .A, .C, .O, .B, .period, .period-2 {
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.h {
+    animation-name: h;
+    animation-delay: 3s;
+}
+
+@keyframes h {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.i {
+    animation-name: i;
+    animation-delay: 3.2s;
+}
+
+@keyframes i {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.period {
+    animation-name: period;
+    animation-delay: 3.4s;
+}
+
+@keyframes period {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.I {
+    animation-name: I;
+    animation-delay: 3.6s;
+}
+
+@keyframes I {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.apostrophe {
+    animation-name: apostrophe;
+    animation-delay: 3.8s;
+}
+
+@keyframes apostrophe {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.m {
+    animation-name: m;
+    animation-delay: 4s;
+}
+
+@keyframes m {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.J {
+    animation-name: J;
+    animation-delay: 4.2s;
+}
+
+@keyframes J {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.A {
+    animation-name: A;
+    animation-delay: 4.4s;
+}
+
+@keyframes A {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.C {
+    animation-name: C;
+    animation-delay: 4.6s;
+}
+
+@keyframes C {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.O {
+    animation-name: O;
+    animation-delay: 4.8s;
+}
+
+@keyframes O {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.B {
+    animation-name: B;;
+    animation-delay: 5s;
+}
+
+@keyframes B {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.period-2 {
+    animation-name: period-2;
+    animation-delay: 5.2s;
+}
+
+@keyframes period-2 {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.a-developer {
+    opacity: 0;
+    animation-name: a-developer;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 6.2s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+@keyframes a-developer {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
