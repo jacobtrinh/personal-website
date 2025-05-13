@@ -143,7 +143,40 @@ p {
 
 /* Responsiveness */
 
-@media (max-width: 1024px) {
+@media (min-width: 319px) and (max-width: 480px) {
+    .card {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card > img {
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .first-group > p {
+        font-size: 1.8rem;
+    }
+
+    .click-me {
+        width: 140px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    .button-description {
+        font-size: 14px;
+    }
+
+    .linked-in {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
     .card {
         flex-direction: column-reverse;
         height: auto;
@@ -154,11 +187,59 @@ p {
     .card > img {
         height: 300px;
         margin-bottom: 20px;
-
     }
 
-    .text {
-        margin: 0 auto;
+    .first-group > p {
+        font-size: 2.5rem;
+    }
+
+    .click-me {
+        width: 160px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    .button-description {
+        font-size: 16px;
+    }
+
+    .linked-in {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .card {
+        flex-direction: row;
+        height: 70vh;
+        padding: 40px;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card > img {
+        height: 400px;
+    }
+
+    .first-group > p {
+        font-size: 3rem;
+    }
+
+    .click-me {
+        width: 180px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    .button-description {
+        font-size: 18px;
+    }
+
+    .linked-in {
+        width: 36px;
+        height: 36px;
     }
 }
 
