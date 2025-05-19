@@ -72,7 +72,7 @@ p {
     height: 40px;
     border-radius: 20px;
     border: none;
-    transition: width .8s, height .8s, font-size .8s;
+    transition: width .8s, height .8s, font-size .8s, background-color .8s;
 }
 
 .contact-me:hover {
@@ -80,6 +80,10 @@ p {
     height: 42px;
     font-size: 1.1rem;
     transition: width .8s, height .8s, font-size .8s;
+}
+
+.contact-me:active {
+    background-color: rgb(210, 252, 171);
 }
 
 .instagram-icon, .github-icon, .linkedin-icon {
