@@ -242,12 +242,3 @@ p {
     width: 45px;
     height: 45px;
 }
-
-@media (max-width: 500) {
-    .technologies-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
