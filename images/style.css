@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    font-family: "Lexend";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    float: right;
+    border-radius: 50%;
+    height: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.name {
+    margin-bottom: -5px;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.description {
+    font-size: 4rem;
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.location {
+    font-size: 2rem;
+}
+
+.contact-me {
+    background-color: rgb(139, 255, 31);
+    font-family: "Lexend";
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.863);
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: width .8s, height .8s, font-size .8s;
+}
+
+.contact-me:hover {
+    width: 130px;
+    height: 42px;
+    font-size: 1.1rem;
+    transition: width .8s, height .8s, font-size .8s;
+}
+
+.instagram-icon, .github-icon, .linkedin-icon {
+    cursor: pointer;
+}
+
+.my-tech {
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 3rem;
+    height: 50vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    height: 75px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.589);
+    padding: 5px;
+    transition: background-color .6s;
+}
+
+.card > p {
+    margin-top: 13px;
+}
+
+.card:hover {
+    background-color: rgba(128, 128, 128, 0.788);
+    transition: background-color .6s;
+}
+
+.cards {
+    margin-top: -400px;
+}
+
+.tech1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(97, 218, 251, 0.35);
+    border-radius: 5px;
+}
+
+.react-icon {
+    width: 45px;
+    height: 40px;
+}
+
+.tech2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(19, 165, 75, 0.35);
+    border-radius: 5px;
+}
+
+.django-icon {
+    margin-left: -3px;
+    width: 35px;
+    height: 40px;
+}
+
+.tech3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(206, 49, 10, 0.35);
+    border-radius: 5px;
+}
+
+.git-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.tech4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(76, 182, 243, 0.342);
+    border-radius: 5px;
+}
+
+.tailwind-icon {
+    width: 45px;
+    height: 40px;
+}
+
+.tech5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(176, 76, 243, 0.342);
+    border-radius: 5px;
+}
+
+.bootstrap-icon {
+    width: 55px;
+    height: 45px;
+}
+
+.tech6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(113, 165, 243, 0.507);
+    border-radius: 5px;
+}
+
+.postgre-icon {
+    width: 55px;
+    height: 45px;
+}
+
+.tech7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(19, 165, 75, 0.445);
+    border-radius: 5px;
+}
+
+.node-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.tech8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(207, 241, 53, 0.445);
+    border-radius: 5px;
+}
+
+.express-icon {
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 500) {
+    .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+}
