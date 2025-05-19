@@ -32,7 +32,6 @@ p {
 }
 
 .profile-picture {
-    float: right;
     border-radius: 50%;
     height: 300px;
 }
